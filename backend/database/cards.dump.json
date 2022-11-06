@@ -1,0 +1,97 @@
+[{
+  "_id": {
+    "$oid": "63680cd229fb141383093753"
+  },
+  "name": "Jack",
+  "cardNumber": {
+    "$numberLong": "4111111111111111"
+  },
+  "limit": 234,
+  "balance": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1667763410326"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63680d0329fb141383093757"
+  },
+  "name": "Lyods",
+  "cardNumber": {
+    "$numberLong": "3530111333300000"
+  },
+  "limit": 124,
+  "balance": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1667763459305"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63680d1229fb14138309375a"
+  },
+  "name": "Ruth",
+  "cardNumber": {
+    "$numberLong": "4012888888881881"
+  },
+  "limit": 10,
+  "balance": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1667763474364"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63680d1f29fb14138309375d"
+  },
+  "name": "laura",
+  "cardNumber": {
+    "$numberLong": "5019717010103742"
+  },
+  "limit": 234,
+  "balance": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1667763487870"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63680d2d29fb141383093760"
+  },
+  "name": "David",
+  "cardNumber": {
+    "$numberLong": "6331101999990016"
+  },
+  "limit": 120,
+  "balance": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1667763501809"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63680e0e59a6688ed3162d32"
+  },
+  "name": "Charlie",
+  "cardNumber": {
+    "$numberLong": "6011111111111117"
+  },
+  "limit": 999,
+  "balance": 0,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1667763726206"
+    }
+  },
+  "__v": 0
+}]
