@@ -39,23 +39,23 @@ describe("Testing credit card apis", () => {
     expect(response.status).toHaveBeenCalledWith(400);
   });
 
-  test("status code should be 400, if limit is empty", () => {
-    const response = mockResponse();
-    const reqJson = mockRequest({
-      name: "sonakshi",
-      cardNumber: "123",
-      limit: "",
-    });
-    controller.addCard(reqJson, response, null);
-    expect(response.status).toHaveBeenCalledWith(400);
-  });
-
   test("status code should be 400, if name is empty", () => {
     const response = mockResponse();
     const reqJson = mockRequest({
       name: "",
       cardNumber: "123",
       limit: "22",
+    });
+    controller.addCard(reqJson, response, null);
+    expect(response.status).toHaveBeenCalledWith(400);
+  });
+
+  test("status code should be 400, if limit is empty", () => {
+    const response = mockResponse();
+    const reqJson = mockRequest({
+      name: "sonakshi",
+      cardNumber: "123",
+      limit: "",
     });
     controller.addCard(reqJson, response, null);
     expect(response.status).toHaveBeenCalledWith(400);
