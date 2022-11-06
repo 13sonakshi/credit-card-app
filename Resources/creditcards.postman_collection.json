@@ -1,0 +1,61 @@
+{
+	"variables": [],
+	"info": {
+		"name": "creditcards",
+		"_postman_id": "27e2651c-b266-b3f8-e240-b9dc8b6a02d1",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add card",
+			"request": {
+				"url": "http://localhost:4000/cards/add-card",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "sonakshi",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "cardnumber",
+							"value": "1234432112344321",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "limit",
+							"value": "10",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "http://localhost:4000/cards/add-card"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cards",
+			"request": {
+				"url": "http://localhost:4000/cards/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "http://localhost:4000/cards/"
+			},
+			"response": []
+		}
+	]
+}
