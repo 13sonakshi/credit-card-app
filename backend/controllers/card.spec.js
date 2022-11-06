@@ -1,5 +1,6 @@
 const controller = require("../controllers/card.js");
 const mongoose = require("mongoose");
+const { luhnChk } = require("../helpers/luhn.js");
 
 const mockResponse = () => {
   const response = {};
@@ -16,6 +17,17 @@ const mockRequest = (data) => {
 };
 
 describe("Testing credit card apis", () => {
+  test("status code should be 400, if request is invalid", () => {
+    const response = mockResponse();
+    const reqJson = mockRequest({
+      name: "",
+      cardNumber: "",
+      limit: "",
+    });
+    controller.addCard(reqJson, response, null);
+    expect(response.status).toHaveBeenCalledWith(400);
+  });
+
   test("status code should be 400, if credit card number is invalid", () => {
     const response = mockResponse();
     const reqJson = mockRequest({
@@ -47,5 +59,15 @@ describe("Testing credit card apis", () => {
     });
     controller.addCard(reqJson, response, null);
     expect(response.status).toHaveBeenCalledWith(400);
+  });
+
+  test("result should be true, if request is valid", () => {
+    const reqJson = mockRequest({
+      name: "sonakshi",
+      cardNumber: "6011000990139424",
+      limit: "224",
+    });
+    let result = luhnChk(reqJson.body.cardNumber);
+    expect(result).toBe(true);
   });
 });
