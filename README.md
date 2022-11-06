@@ -22,6 +22,14 @@ You may also see any lint errors in the console.
 3) Wait for installation to complete
 4) npm start
 
+## Connecting to Mongo Db
+1) Install the MongoDB compass
+2) Connect to your deployment
+3) Create a new database titled - creditcarddb
+   This database name is also present in (\credit-card-app\backend\database\db.js) db.js file
+   mongodb://localhost:27017/{dbName}
+4) Connect to your database
+
 ## REST API's
 1) add cards (POST)
 http://localhost:4000/cards/add-card
