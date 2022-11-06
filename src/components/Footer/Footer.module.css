@@ -1,0 +1,17 @@
+.footer {
+  cursor: pointer;
+  color: #555;
+  display: block;
+  padding: 10px;
+  padding: 0.5rem;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.label {
+  color: rgb(235, 228, 228);
+  text-align: center;
+}

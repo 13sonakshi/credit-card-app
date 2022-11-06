@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header";
 import CardList from "./components/CardsList/CardList";
 import CardForm from "./components/CardForm/CardForm";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<CardInput />}></Route>
         </Routes>
       </main>
+      <Footer />
     </div>
   );
 }
