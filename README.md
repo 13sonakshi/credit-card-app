@@ -22,6 +22,20 @@ You may also see any lint errors in the console.
 3) Wait for installation to complete
 4) npm start
 
+## REST API's
+1) add cards (POST)
+http://localhost:4000/cards/add-card
+
+Sample request Json
+
+{
+    "name": "Sherlock",
+    "cardNumber": "378734493671000",
+    "limit": "22"
+}
+
+2) get all cards (GET)
+http://localhost:4000/cards/
 
 ## Running test cases using `npm test`
 1) Navigate to Backend Folder - cd backend
@@ -29,5 +43,7 @@ You may also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+## Postman collection and mongo db collections are present inside Resources folder
 
 
