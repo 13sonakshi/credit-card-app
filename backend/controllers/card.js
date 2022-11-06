@@ -47,13 +47,15 @@ exports.addCard = (req, res, next) => {
 
 exports.getCards = (req, res) => {
   try {
-    cardSchema.find({}, { _id: 0, __v: 0 }, (error, data) => {
-      if (error) {
-        throw "Bad Request!";
-      } else {
-        res.status(200).send(data);
-      }
-    });
+    cardSchema
+      .find({}, { _id: 0, __v: 0 }, (error, data) => {
+        if (error) {
+          throw "Bad Request!";
+        } else {
+          res.status(200).send(data);
+        }
+      })
+      .sort({ _id: -1 });
   } catch (error) {
     return res.status(400).send({ message: error });
   }
